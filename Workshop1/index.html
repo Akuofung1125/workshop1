@@ -42,7 +42,7 @@
                         </li>
                         <li>
                             <label class="required">購買日期</label>
-                            <input id="bought_datepicker"/>
+                            <input id="bought_datepicker" />
                         </li>
                         <li>
                             <label>送達日期</label>
@@ -50,7 +50,7 @@
                         </li>
                         <li>
                             <label class="required">金額</label>
-                            <input id="book_price" type="text"/>
+                            <input id="book_price" type="text" />
                         </li>
                         <li>
                             <label class="required">數量</label>
@@ -67,8 +67,13 @@
                     </ul>
                 </form>
             </div>
-            <button type="button" id="add_book" class="k-button k-primary btn-add-book">新增書籍</button>
+
+            <button type="button" id="add_book" class="k-button k-primary btn-add-book">新增書籍</button><br>
+            <script id="template" type="text/x-kendo-template">
+                <input type="search" id="search" class="k-textbox" placeholder="我想要找.." />
+            </script>
             <div id="book_grid">
+
             </div>
         </div>
     </main>
@@ -78,6 +83,8 @@
     <script src="./js/kendo.all.min.js"></script>
     <script src="./js/uikit.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="js/kendo.culture.zh-TW.min.js"></script>
+    <script src="js/kendo.messages.zh-TW.min.js"></script>
 </body>
 
 </html>
