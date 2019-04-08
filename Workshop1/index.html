@@ -21,7 +21,10 @@
         </nav>
     </header>
     <main>
+
         <div class="uk-container align-center">
+
+
             <div class="uk-card uk-text-left uk-width-1-3">
                 <form id="book_form">
                     <ul class="fieldlist">
@@ -67,15 +70,17 @@
                     </ul>
                 </form>
             </div>
-
-            <button type="button" id="add_book" class="k-button k-primary btn-add-book">新增書籍</button><br>
-            <script id="template" type="text/x-kendo-template">
+            <button type="button" id="add_book" class="k-button k-primary btn-add-book">新增書籍</button>
+            <div id="book_grid">
+            </div>
+            <script id="searchjs" type="text/x-kendo-template">
                 <input type="search" id="search" class="k-textbox" placeholder="我想要找.." />
             </script>
-            <div id="book_grid">
 
-            </div>
+
+
         </div>
+
     </main>
     <footer></footer>
     <script type="text/javascript" src="data/book-data.js"></script>
